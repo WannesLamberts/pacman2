@@ -215,13 +215,6 @@ def aStarSearch(problem, heuristic=nullHeuristic):
     import copy
     start = problem.getStartState()
     fringe = PriorityQueue()
-    """
-    fringe.push((start,[],100),100)
-    fringe.update((start,[],100),20)
-    fringe.update((start,[],100),30)
-
-    state=fringe.pop()
-    """
     fringe.push((start, [], 0), 0)
     visitedstateslist = []
     while (not fringe.isEmpty()):
