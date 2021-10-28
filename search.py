@@ -122,7 +122,7 @@ def depthFirstSearch(problem):
     import copy
     start= problem.getStartState()
     fringe = Stack()
-    fringe.push((start,[],1))
+    fringe.push((start,[],0))
     visitedstateslist=[]
     while (not fringe.isEmpty()):
         state = fringe.pop()
@@ -146,7 +146,7 @@ def breadthFirstSearch(problem):
     import copy
     start= problem.getStartState()
     fringe = Queue()
-    fringe.push((start,[],1))
+    fringe.push((start,[],0))
     visitedstateslist=[]
     while (not fringe.isEmpty()):
         state = fringe.pop()
